@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- HOME ACTIVITY -->
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:defaultFocusHighlightEnabled="true"
+    tools:context=".After_login"
+    android:id="@+id/R_layout"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    >
+
+
+    <!--
+    <TextView
+        android:id="@+id/txt_naam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+/>
+    <TextView
+        android:id="@+id/txt_pata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/txt_naam"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txt_ghar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/txt_pata"
+        android:layout_centerHorizontal="true"
+        />-->
+   <!-- <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tt"
+        android:background="@color/colorPrimary"
+        style="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <EditText
+            android:layout_toRightOf="@+id/img_btn_back"
+            android:layout_toLeftOf="@id/img_btn_search"
+            android:id="@+id/et_search"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Type here to search"
+            android:textColor="#FFF"
+            android:textColorHint="#A59F9F"
+            android:allowUndo="true"
+            android:inputType="textCapSentences"
+            android:background="@drawable/et_search"
+            ></EditText>
+
+        <ImageButton
+            android:id="@+id/img_btn_back"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/img_btn_search"
+            android:layout_width="50dp"
+            android:background="@null"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_search"
+            android:layout_alignParentRight="true"/>
+       <!-- <androidx.appcompat.widget.Toolbar
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+            ></androidx.appcompat.widget.Toolbar>
+
+-->
+    </RelativeLayout>
+
+   <!-- </LinearLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/navbtn"
+        />
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/button_nav"
+        android:background="@color/colorPrimaryDark"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        />
+
+   <!-- <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        tools:context=".After_login"
+        tools:openDrawer="left">
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>-->
+
+
+
+
+</RelativeLayout>

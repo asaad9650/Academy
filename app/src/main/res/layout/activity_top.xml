@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Top"
+    android:id="@+id/top_rel"
+    tools:openDrawer="start"
+    android:background="#fff"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tt"
+        style="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+            ></androidx.appcompat.widget.Toolbar>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="30dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dash_img_user"
+        android:layout_marginTop="30dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        ></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/dash_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            style="@style/TextAppearance.AppCompat.Body2"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll2"
+        android:layout_below="@+id/ll1">
+
+        <Button
+            android:id="@+id/dash_paid_courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="PAID COURSES"
+            android:drawablePadding="15dp"
+            android:textAlignment="textStart"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/paid"/>
+
+        <Button
+            android:id="@+id/dash_uploaders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="Uploaders"
+            android:textAlignment="textStart"
+            android:drawablePadding="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/uploader"/>
+
+        <Button
+            android:id="@+id/btn_dash_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:background="#fff"
+            android:text="LOGOUT  "
+            android:drawablePadding="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"/>
+    </LinearLayout>
+    <!--
+        <Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <SearchView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:searchIcon="@drawable/ic_search"
+            android:iconifiedByDefault="false"
+            android:focusableInTouchMode="true"
+
+            />
+        </Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edit"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:background="#fff"
+                android:hint="Type here to search"
+                android:textColorHint="@color/colorPrimaryDark"></EditText>
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/img_search_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_search">
+
+            </androidx.appcompat.widget.AppCompatImageButton>
+
+        </LinearLayout>-->
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/button_nav"
+        android:background="@color/colorPrimaryDark"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        />
+
+
+
+
+
+</RelativeLayout>

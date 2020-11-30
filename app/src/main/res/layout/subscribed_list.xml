@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/subscription_layout"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/subscription_logo"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:background="@null">
+    </ImageView>
+
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/subscription_name"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Uploader Name"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/subscription_logo"
+        />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>

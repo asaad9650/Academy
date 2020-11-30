@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "9005713204",
+    "firebase_url": "https://projekt-fa1f5.firebaseio.com",
+    "project_id": "projekt-fa1f5",
+    "storage_bucket": "projekt-fa1f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9005713204:android:2629b8b80f36050a65c761",
+        "android_client_info": {
+          "package_name": "com.example.academy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9005713204-m3u5a05u135c9lnumg1vmgbcrjt8d3ge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.academy",
+            "certificate_hash": "91b0e0cc8de28988ef2f5c28930d01ca96d6a870"
+          }
+        },
+        {
+          "client_id": "9005713204-pfnv3iil3hqhvheu3heknbpt84leh1u5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.academy",
+            "certificate_hash": "e8086f2dcac14891ce3978b19a95c663fbd45cb7"
+          }
+        },
+        {
+          "client_id": "9005713204-u1hj03cp024q8f09mif48ulm87tabrjk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.academy",
+            "certificate_hash": "8e30fb71ff72495e4d0bb4cefb8f2a074b2c674b"
+          }
+        },
+        {
+          "client_id": "9005713204-phdnf6fqsl7b06phblh2ple14emt9u5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCITtGkIUUDPIGkvlOLViDgwfKge1nVvZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9005713204-phdnf6fqsl7b06phblh2ple14emt9u5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

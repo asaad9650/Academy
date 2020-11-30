@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homepage"
+        android:icon="@drawable/homeicon"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/scrpage"
+        android:icon="@drawable/sicon"
+        android:title="Subscriptions" />
+    <item
+        android:id="@+id/savebtn"
+        android:icon="@drawable/save"
+        android:title="Saved" />
+
+    <item
+        android:id="@+id/toppage"
+        android:icon="@drawable/ic_account"
+        android:title="Dashboard" />
+</menu>

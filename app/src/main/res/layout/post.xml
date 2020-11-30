@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardPreventCornerOverlap="false">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalScrollbarPosition="left"
+        android:scrollbars="vertical"
+        >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#000"
+            />
+    <TextView
+        android:id="@+id/cr_na"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course name"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        style="bold"/>
+
+
+
+    <!--<TextView
+        android:layout_below="@+id/cr_na"
+        android:id="@+id/da_ti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date_time"
+        android:textSize="16dp"
+        />-->
+
+   <!-- <TextView
+        android:layout_below="@+id/da_ti"
+        android:id="@+id/up_na"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uploader Name"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        style="bold"/> -->
+
+    <!--<TextView
+        android:id="@+id/vi_de"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Video Description"
+        android:layout_below="@+id/up_na"
+        android:textSize="16dp"
+        />-->
+
+    <TextView
+        android:id="@+id/vi_ti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Video title"
+        android:gravity="center"
+        android:layout_below="@id/cr_na"
+        android:textSize="18dp"
+        style="bold"/>
+
+
+    <!--<TextView
+        android:id="@+id/vi_li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Video link"
+        android:layout_below="@+id/vi_ti"
+        />-->
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
